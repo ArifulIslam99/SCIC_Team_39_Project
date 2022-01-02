@@ -19,7 +19,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    width: 60%;
+    width: 70%;
     padding: 35px;
     text-align: center;
     margin-top: 50px;
@@ -30,7 +30,7 @@
 }  
 
 .login-field h2{
-    color: rgb(17, 4, 0);
+    color: rgb(251, 255, 21);
     font-weight: 600;
 }
 

@@ -39,7 +39,7 @@ const loginBackground = {
 
             <div className="login-field">
 
-                <h2>Please Login</h2>
+                <h2>Login</h2>
                 
                  <form onSubmit={handleLoginSubmit } 
                 style={{color:'white'}}
@@ -48,22 +48,18 @@ const loginBackground = {
                 onBlur={handleOnBlur}
                 type='email'
                 className='input-filed'
-                id="outlined-basic"
                 name="email"
-                label="Email"
+                placeholder='Enter Email'
                 required 
                  />
                    <br />
                 <input 
                 onBlur={handleOnBlur}
-                id="outlined-basic"
-                label="Password"
+                placeholder='Enter Password'
                 type='password'
                 className='input-filed'
                 name="password"
                 required 
-                variant="standard"
-                color= "warning"
                 />
 
                    <br />
