@@ -1,0 +1,31 @@
+.icon {
+  margin: 5px;
+  padding: 5px;
+  color: rgb(155, 155, 155);
+  font-size: 30px;
+}
+.icon:hover {
+  background-color: rgba(236, 146, 12, 0.938);
+}
+.footer-menu {
+  list-style: none;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.footer-input {
+  padding: 8px;
+  border: none;
+  outline: none;
+  background-color: gray;
+}
+.footer-container {
+  background-color: #3a3434;
+  padding: 50px;
+  color: rgb(216, 209, 209);
+}
+.footer-phone-icon {
+  font-size: 30px;
+  color: rgb(247, 144, 9);
+}
