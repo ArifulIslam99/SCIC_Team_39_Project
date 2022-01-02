@@ -7,7 +7,7 @@ import {
   faTwitterSquare,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-import  {faPhoneVolume} from "@fortawesome/free-solid-svg-icons";
+import {faPhoneVolume} from "@fortawesome/free-solid-svg-icons";
 import { Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
