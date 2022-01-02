@@ -4,6 +4,7 @@ import Login from './Components/Authentication/Login/Login';
 import SignUp from './Components/Authentication/SignUp/SignUp';
 import About from './Components/Home/About/About';
 import Home from './Components/Home/Home/Home';
+import Footer from './Components/Shared/Footer/Footer';
 import Navigation from './Components/Shared/Navigation/Navigation';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
 
           
           </Switch>
+          <Footer></Footer>
       </BrowserRouter>
     </div>
   );
