@@ -12,7 +12,7 @@ const Home = () => {
      <Exclusive></Exclusive>
 
 {/*--------------- About Start------------ */}
-     <div className="row d-flex- justify-content-center align-items-centercontainer my-5 ">
+     <div className="row w-75 mx-auto d-flex- justify-content-center align-items-centercontainer my-5 ">
 
 <div className="col-md-6">
 <h1 className="primary">To know about US..</h1>
