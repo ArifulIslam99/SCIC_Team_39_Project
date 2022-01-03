@@ -21,87 +21,85 @@ const Dashboard = () => {
       <hr className="new mb-4" />
       <Container className="mt-2">
         <div className="d-flex">
-          <div className="side-menu px-3">
-            <div className="pt-3">
-              <Nav className="d-grid me-auto">
-                <NavLink
-                  activeClassName="dashboard-navText-active"
-                  className="dashboard-navText mb-3 text-decoration-none text-uppercase"
-                  to={`${url}/yourorders`}
-                >
-                  <div className="icons">
-                    <i class="fas fa-shopping-cart"></i>
-                  </div>{" "}
-                  <span className="d-navText">Your Orders</span>
-                </NavLink>
+          <div className="side-menu d-flex align-items-center px-3 mb-5">
+            <Nav className="d-grid me-auto">
+              <NavLink
+                activeClassName="dashboard-navText-active"
+                className="dashboard-navText mb-5 text-decoration-none text-uppercase"
+                to={`${url}/yourorders`}
+              >
+                <div className="icons">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>{" "}
+                <span className="d-navText">Your Orders</span>
+              </NavLink>
 
-                <NavLink
-                  activeClassName="dashboard-navText-active"
-                  className="dashboard-navText mb-3 text-decoration-none text-uppercase"
-                  to={`${url}/payment`}
-                >
-                  <div className="icons">
-                    <i class="fas fa-dollar-sign"></i>
-                  </div>{" "}
-                  <span className="d-navText">Payment</span>
-                </NavLink>
+              <NavLink
+                activeClassName="dashboard-navText-active"
+                className="dashboard-navText mb-5 text-decoration-none text-uppercase"
+                to={`${url}/payment`}
+              >
+                <div className="icons">
+                  <i class="fas fa-dollar-sign"></i>
+                </div>{" "}
+                <span className="d-navText">Payment</span>
+              </NavLink>
 
-                <NavLink
-                  activeClassName="dashboard-navText-active"
-                  className="dashboard-navText mb-3 text-decoration-none text-uppercase"
-                  to={`${url}/addreview`}
-                >
-                  <div className="icons">
-                    <i class="far fa-comment-alt"></i>
-                  </div>{" "}
-                  <span className="d-navText">Add Review</span>
-                </NavLink>
+              <NavLink
+                activeClassName="dashboard-navText-active"
+                className="dashboard-navText mb-5 text-decoration-none text-uppercase"
+                to={`${url}/addreview`}
+              >
+                <div className="icons">
+                  <i class="far fa-comment-alt"></i>
+                </div>{" "}
+                <span className="d-navText">Add Review</span>
+              </NavLink>
 
-                <NavLink
-                  activeClassName="dashboard-navText-active"
-                  className="dashboard-navText mb-3 text-decoration-none text-uppercase"
-                  to={`${url}/addnewproduct`}
-                >
-                  <div className="icons">
-                    <i class="fas fa-plus-square"></i>
-                  </div>{" "}
-                  <span className="d-navText">Add New Product</span>
-                </NavLink>
+              <NavLink
+                activeClassName="dashboard-navText-active"
+                className="dashboard-navText mb-5 text-decoration-none text-uppercase"
+                to={`${url}/addnewproduct`}
+              >
+                <div className="icons">
+                  <i class="fas fa-plus-square"></i>
+                </div>{" "}
+                <span className="d-navText">Add New Product</span>
+              </NavLink>
 
-                <NavLink
-                  activeClassName="dashboard-navText-active"
-                  className="dashboard-navText mb-3 text-decoration-none text-uppercase"
-                  to={`${url}/manageallproducts`}
-                >
-                  <div className="icons">
-                    <i class="fas fa-gem"></i>
-                  </div>{" "}
-                  <span className="d-navText">Manage All Products</span>
-                </NavLink>
+              <NavLink
+                activeClassName="dashboard-navText-active"
+                className="dashboard-navText mb-5 text-decoration-none text-uppercase"
+                to={`${url}/manageallproducts`}
+              >
+                <div className="icons">
+                  <i class="fas fa-gem"></i>
+                </div>{" "}
+                <span className="d-navText">Manage All Products</span>
+              </NavLink>
 
-                <NavLink
-                  activeClassName="dashboard-navText-active"
-                  className="dashboard-navText mb-3 text-decoration-none text-uppercase"
-                  to={`${url}/manageallorders`}
-                >
-                  <div className="icons">
-                    <i class="fas fa-dolly"></i>
-                  </div>{" "}
-                  <span className="d-navText">Manage All Orders</span>
-                </NavLink>
+              <NavLink
+                activeClassName="dashboard-navText-active"
+                className="dashboard-navText mb-5 text-decoration-none text-uppercase"
+                to={`${url}/manageallorders`}
+              >
+                <div className="icons">
+                  <i class="fas fa-dolly"></i>
+                </div>{" "}
+                <span className="d-navText">Manage All Orders</span>
+              </NavLink>
 
-                <NavLink
-                  activeClassName="dashboard-navText-active"
-                  className="dashboard-navText mb-3 text-decoration-none text-uppercase"
-                  to={`${url}/makeadmin`}
-                >
-                  <div className="icons">
-                    <i class="fas fa-user"></i>
-                  </div>{" "}
-                  <span className="d-navText">Make Admin</span>
-                </NavLink>
-              </Nav>
-            </div>
+              <NavLink
+                activeClassName="dashboard-navText-active"
+                className="dashboard-navText text-decoration-none text-uppercase"
+                to={`${url}/makeadmin`}
+              >
+                <div className="icons">
+                  <i class="fas fa-user"></i>
+                </div>{" "}
+                <span className="d-navText">Make Admin</span>
+              </NavLink>
+            </Nav>
             {/* 1st div  */}
           </div>
 

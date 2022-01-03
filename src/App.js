@@ -1,7 +1,7 @@
-
 import { BrowserRouter, Switch } from 'react-router-dom';
 import './App.css';
 import Navigation from './Components/Shared/Navigation/Navigation';
+
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
       <Navigation></Navigation>
           <Switch>
-
+                
           </Switch>
       </BrowserRouter>
     </div>
