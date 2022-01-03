@@ -9,7 +9,7 @@ const Navigation = () => {
         <div>
             <Navbar collapseOnSelect expand="lg"style={{backgroundColor:'#3a3434'}} variant="dark">
   <Container>
-  <Navbar.Brand as={Link} to='/'> Jewellery Shop </Navbar.Brand>
+  <Navbar.Brand style={{fontWeight:'800', fontFamily:'cursive', color:'goldenrod'}}  as={Link} to='/'> Jewellery House </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">

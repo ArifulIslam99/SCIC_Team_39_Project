@@ -1,15 +1,15 @@
 import React from 'react';
 import aboutimg2 from '../../../images/img1.jpeg';
-import aboutbanner from '../../../images/img2.jpg'
+import aboutbanner from '../../../images/about_img.jpg'
 
 const About = () => {
   return (
     <div>
       <img className="container-fluid bg-dark" src={aboutbanner} alt="" />
-      <div className="container">
+      <div className="container ">
 
-        <h1 className="text-dark mt-5 pt-5">Warmly Welcome to you for visiting our Website</h1>
-        <div className="row d-flex- justify-content-center align-items-center ">
+        <h1 className="text-dark my-5 pt-5">Warmly Welcome to you for visiting our Website</h1>
+        <div className="row mb-5 d-flex- justify-content-center align-items-center ">
         
           <div className="col-md-6">
 
@@ -22,9 +22,9 @@ const About = () => {
         </div>
 
 
-        <div className="row d-flex- justify-content-center align-items-centercontainer my-5 ">
+        <div className="row d-flex- justify-content-center align-items-centercontainer mt-5 ">
 
-          <div className="col-md-6">
+          <div className="col-md-6 my-auto">
 
             <h3>
             We left no stone unturned in our quest to find the very best web design examples of jewellery e-commerce sites. Here are our top 31 finds...

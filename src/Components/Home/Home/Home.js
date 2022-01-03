@@ -9,13 +9,15 @@ const Home = () => {
 
      <Banner></Banner>
 
-     <Exclusive></Exclusive>
+     <Exclusive></Exclusive> 
+
+   
 
 {/*--------------- About Start------------ */}
-     <div  style={{width:'90%'}} className="row mx-auto d-flex- justify-content-center align-items-centercontainer my-5 ">
+     <div  style={{width:'90%', marginTop:'200px'}} className="row mx-auto d-flex- justify-content-center align-items-centercontainer ">
 
 <div className="col-md-6">
-<h1 className="primary">To know about US..</h1>
+<h1 className="primary fw-bold">To know about US..</h1>
 <hr />
   <h3>
   We left no stone unturned in our quest to find the very best web design examples of jewellery e-commerce sites. Here are our top 31 finds...

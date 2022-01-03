@@ -19,16 +19,16 @@ const Footer = () => {
           <div className="row">
             <div className="col-md-5">
               <div className="left-container text-start">
-                <h1> <span className="text-warning">Gold & </span> Silver </h1>
+                <h1 style={{fontFamily:'cursive'}}> <span  className="text-warning">Jewellery  </span> House </h1>
 
               
 
                 <div className="row mt-4">
                   <div className="footer-menu-container fw-bold">
 
-                    <Nav.Link as={Link} to="/home#home" className="text-light">Home</Nav.Link>
-                    <Nav.Link as={Link} to="/about#about" className="text-light">About Us</Nav.Link>
-                    <Nav.Link as={Link} to="/services#services" className="text-light">Products</Nav.Link>
+                    <Nav.Link as={Link} to="/home" className="text-light">Home</Nav.Link>
+                    <Nav.Link as={Link} to="/about" className="text-light">About Us</Nav.Link>
+                    <Nav.Link as={Link} to="/shop" className="text-light">Products</Nav.Link>
                     <Nav.Link as={Link} to="/register" className="text-light">Register Now</Nav.Link>
 
                   </div>
@@ -105,7 +105,7 @@ const Footer = () => {
         </div>
         <hr />
         <p className="mt-5">
-          <small> © 2022 Goldish Theme. All rights reserved. | Silver | Terms and Conditions | Privacy Policy</small>
+          <small> © 2022 Jewellery House. All rights reserved. | Terms and Conditions | Privacy Policy</small>
         </p>
       </div>
     </div>
