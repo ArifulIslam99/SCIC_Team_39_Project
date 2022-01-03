@@ -7,7 +7,7 @@ const Navigation = () => {
   const {user, logOut} = useAuth()
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar collapseOnSelect expand="lg"style={{backgroundColor:'#3a3434'}} variant="dark">
   <Container>
   <Navbar.Brand as={Link} to='/'> Jewellery Shop </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -15,6 +15,7 @@ const Navigation = () => {
     <Nav className="me-auto">
       <Nav.Link as={Link} to='/home'>Home</Nav.Link>
       <Nav.Link as={Link} to='/shop'>Shop</Nav.Link>
+      <Nav.Link as={Link} to='/dashboard'>Dashboard</Nav.Link>
       
     </Nav>
     <Nav>

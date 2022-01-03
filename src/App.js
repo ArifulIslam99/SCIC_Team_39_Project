@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Login from './Components/Authentication/Login/Login';
 import SignUp from './Components/Authentication/SignUp/SignUp';
+import Dashboard from './Components/Dashboard/Dashboard';
 import About from './Components/Home/About/About';
 import Home from './Components/Home/Home/Home';
 import Footer from './Components/Shared/Footer/Footer';
@@ -30,6 +31,9 @@ function App() {
             </Route>
           <Route path="/about">
               <About></About>
+            </Route>          
+          <Route path="/dashboard">
+              <Dashboard/>
             </Route>          
           </Switch>
           <Footer></Footer>

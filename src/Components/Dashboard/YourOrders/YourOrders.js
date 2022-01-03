@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
-import useAuth from "../../../Hooks/useAuth";
+import useAuth from "../../../hooks/useAuth";
 
 const YourOrders = () => {
   const [orders, setOrders] = useState([]);
