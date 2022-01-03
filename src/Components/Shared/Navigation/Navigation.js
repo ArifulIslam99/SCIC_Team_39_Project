@@ -15,7 +15,11 @@ const Navigation = () => {
     <Nav className="me-auto">
       <Nav.Link as={Link} to='/home'>Home</Nav.Link>
       <Nav.Link as={Link} to='/shop'>Shop</Nav.Link>
-      <Nav.Link as={Link} to='/dashboard'>Dashboard</Nav.Link>
+      {
+        (user.uid) &&
+
+        <Nav.Link as={Link} to='/dashboard'>Dashboard</Nav.Link>
+      }
       
     </Nav>
     <Nav>
@@ -25,6 +29,9 @@ const Navigation = () => {
             <Nav.Link as={Link} to="/login">Login</Nav.Link>
             </Nav> 
             }
+
+
+
       {
               (user.displayName) &&
 
