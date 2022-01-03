@@ -3,6 +3,7 @@ import axios from "axios";
 import { Button, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
+import "./AddNewProduct.css";
 
 const AddNewProduct = () => {
   const { register, handleSubmit, reset } = useForm();
@@ -27,12 +28,12 @@ const AddNewProduct = () => {
 
   return (
     <div>
-      <h3 className="text-center text-dark mb-5 text-uppercase">
+      <h3 className="dashboard-sectionTitle text-center text-dark mb-5 text-uppercase">
         add new <span className="text-danger">product</span>
       </h3>
 
       <Form
-        className="d-flex flex-column w-50 mx-auto"
+        className="d-flex flex-column newProducts-form mx-auto"
         onSubmit={handleSubmit(onSubmit)}
       >
         <input
