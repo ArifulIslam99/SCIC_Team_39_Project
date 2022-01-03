@@ -58,33 +58,6 @@ const AddNewProduct = () => {
           placeholder="Model No."
           {...register("productModel")}
         />
-        <input
-          style={{ outline: "none" }}
-          className="mb-3 py-2 px-3"
-          placeholder="Range"
-          {...register("productRange")}
-        />
-
-        <input
-          style={{ outline: "none" }}
-          className="mb-3 py-2 px-3"
-          placeholder="Control Type"
-          {...register("productControlType")}
-        />
-
-        <input
-          style={{ outline: "none" }}
-          className="mb-3 py-2 px-3"
-          placeholder="Camera Resolution"
-          {...register("productResolution")}
-        />
-
-        <input
-          style={{ outline: "none" }}
-          className="mb-3 py-2 px-3"
-          placeholder="Battery Backup"
-          {...register("productBatteries")}
-        />
 
         <textarea
           style={{ outline: "none" }}
