@@ -30,8 +30,7 @@ const About = () => {
             We left no stone unturned in our quest to find the very best web design examples of jewellery e-commerce sites. Here are our top 31 finds...
             </h3>
 
-            <p>The secret to web design for jewellery e-commerce sites is simplicity.
-
+            <p>Our luxury designer jewelry house based in Rhode Island. We create seasonal collections of heirloom quality pieces that are crafted in small batches.
 With the product having so much focus on aesthetic beauty and monetary value, the design of the site mustn't outshine the stock. A good site will be beautiful while not getting in the way of the items it is designed to be selling.
 
 In this article we'll reveal our list of our top 31 jewellery e-commerce sites, including two of our own! The title and screenshot of each site is hyperlinked, so you can go and take a look at them for yourself.</p>
