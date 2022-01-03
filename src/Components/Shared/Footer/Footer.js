@@ -38,20 +38,10 @@ const Footer = () => {
             </div>
 
 
-            <div className="col-md-2">
-                  <div className="footer-menu-container ">
-
-                   <ul>
-                     <li>Account</li>
-                     <li>Wishlist</li>
-                     <li>Cart</li>
-                     <li>Checkout</li>
-                     <li>Our Blog</li>
-                   </ul>
-
-                  </div>
-                  <div>
-                <div className="mt-5">
+            <div className="col ms-auto ">
+                 
+                  
+                <div className=" mt-5 ">
                   <h4>Follow us on social media</h4>
                 </div>
                 <div className="icons-container d-flex text-center ">
@@ -69,7 +59,7 @@ const Footer = () => {
                     <FontAwesomeIcon icon={faFacebookSquare} />
                   </div>
                 </div>
-              </div>
+            
 
                 </div>
 
