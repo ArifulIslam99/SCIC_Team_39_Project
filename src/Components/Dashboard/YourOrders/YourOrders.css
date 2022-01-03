@@ -1,0 +1,12 @@
+.dashboard-orderTitle {
+  font-size: 20px;
+}
+
+@media all and (max-width: 688px) {
+  .dashboard-sectionTitle {
+    font-size: 20px;
+  }
+  .dashboard-orderTitle {
+    font-size: 15px;
+  }
+}

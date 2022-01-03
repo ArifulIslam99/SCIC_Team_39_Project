@@ -2,14 +2,14 @@ import axios from "axios";
 import { Button, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
-
+import "./AddReview.css";
 const AddReview = () => {
   const { register, handleSubmit, reset } = useForm();
 
   const onSubmit = (data) => {
     console.log(data);
     axios
-      .post("https://secret-garden-17818.herokuapp.com/reviews", data)
+      .post("http://secret-garden-17818.herokuapp.com//reviews", data)
       .then((res) => {
         if (res.data.insertedId) {
           reset();
@@ -26,12 +26,12 @@ const AddReview = () => {
 
   return (
     <div className="pb-5">
-      <h3 className="text-center text-dark mb-5 text-uppercase">
+      <h3 className="dashboard-sectionTitle text-center text-dark mb-5 text-uppercase">
         add <span className="text-danger">review</span>
       </h3>
 
       <Form
-        className="d-flex flex-column w-50 mx-auto"
+        className="d-flex flex-column addReview-form mx-auto"
         onSubmit={handleSubmit(onSubmit)}
       >
         <input

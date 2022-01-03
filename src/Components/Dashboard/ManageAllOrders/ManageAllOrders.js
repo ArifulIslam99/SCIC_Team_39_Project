@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button, Table } from "react-bootstrap";
+import "./ManageAllOrders.css";
 
 const ManageAllOrders = () => {
   const [allorders, setAllOrders] = useState([]);
@@ -7,7 +8,7 @@ const ManageAllOrders = () => {
   const [reload, setReload] = useState(false);
 
   useEffect(() => {
-    fetch("https://secret-garden-17818.herokuapp.com/allorders")
+    fetch("http://secret-garden-17818.herokuapp.com//allorders")
       .then((res) => res.json())
       .then((data) => setAllOrders(data));
   }, [reload]);
@@ -19,7 +20,7 @@ const ManageAllOrders = () => {
     );
     if (proceed) {
       setStatus(status);
-      fetch(`https://secret-garden-17818.herokuapp.com/updateStatus/${id}`, {
+      fetch(`http://secret-garden-17818.herokuapp.com//updateStatus/${id}`, {
         method: "PUT",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ status }),
@@ -41,7 +42,7 @@ const ManageAllOrders = () => {
       "Are you sure, you want to delete this order?"
     );
     if (proceed) {
-      fetch(`https://secret-garden-17818.herokuapp.com/allorders/${id}`, {
+      fetch(`http://secret-garden-17818.herokuapp.com//allorders/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
@@ -59,46 +60,64 @@ const ManageAllOrders = () => {
   };
 
   return (
-    <div className="pb-5">
-      <h3 className="text-center text-uppercase">
+    <div className="pb-5 res-table">
+      <h3 className="dashboard-sectionTitle text-center text-uppercase">
         Manage All <span className="text-danger">orders</span>
       </h3>
-      <h5 className="text-center text-uppercase mt-3 mb-4">
+      <h5 className="dashboard-orderTitle text-center text-uppercase mt-3 mb-4">
         Total <strong className="text-danger">{allorders.length}</strong> orders
       </h5>
-      <div>
+      <div className="">
         <Table bordered hover>
           <thead className="text-uppercase">
             <tr>
-              <th className="text-center p-3">Drone Name</th>
-              <th className="text-center p-3">Price</th>
-              <th className="text-center p-3">Ordered By</th>
-              <th className="text-center p-3">Status</th>
-              <th className="text-center p-3">Approve / Cancel</th>
+              <th className="table-text text-center p-3">Jewelery Name</th>
+              <th className="table-text price text-center p-3">$ Price</th>
+              <th className="table-text text-center p-3">Ordered By</th>
+              <th className="table-text status text-center p-3">Status</th>
+              <th className="table-text text-center p-3">Approve / Cancel</th>
             </tr>
           </thead>
           <tbody>
             {allorders.map((orders) => (
               <tr key={orders._id} orders={orders}>
-                <td className="text-center">{orders.singleProductName}</td>
-                <td className="text-center">{orders.singleProductPrice}</td>
-                <td className="text-center text-danger">{orders.userName}</td>
-                <td className="text-center">{orders.bookedproductStatus}</td>
-                <td className="text-center">
-                  <div className="d-flex">
+                <td className="table-text text-center">
+                  {orders.singleProductName}
+                  <br />
+                  <span className="table-text hidden-price">
+                    {orders.singleProductPrice}
+                  </span>{" "}
+                  <br />
+                  <span className="table-text hidden-status">
+                    {orders.bookedproductStatus}
+                  </span>
+                </td>
+                <td className="table-text text-center price">
+                  {orders.singleProductPrice}
+                </td>
+                <td className="table-text text-center text-danger">
+                  {orders.userName}
+                </td>
+                <td className="table-text text-center status">
+                  {orders.bookedproductStatus}
+                </td>
+                <td className="table-text text-center">
+                  <div className="cancel">
                     <Button
+                      className="approve-btn"
                       onClick={() => handleUpdate(orders._id)}
                       variant="outline-success w-100 me-2"
                       size="sm"
                     >
-                      Approve
+                      <span className="table-text">Approve</span>
                     </Button>
                     <Button
+                      className="table-text"
                       onClick={() => deleteHandler(orders._id)}
                       variant="danger w-100"
                       size="sm"
                     >
-                      Cancel
+                      <span className="table-text">Cancel</span>
                     </Button>
                   </div>
                 </td>

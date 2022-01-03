@@ -3,6 +3,7 @@ import axios from "axios";
 import { Button, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
+import "./AddNewProduct.css";
 
 const AddNewProduct = () => {
   const { register, handleSubmit, reset } = useForm();
@@ -10,7 +11,7 @@ const AddNewProduct = () => {
   const onSubmit = (data) => {
     console.log(data);
     axios
-      .post("https://secret-garden-17818.herokuapp.com/products", data)
+      .post("http://secret-garden-17818.herokuapp.com//products", data)
       .then((res) => {
         if (res.data.insertedId) {
           reset();
@@ -27,12 +28,12 @@ const AddNewProduct = () => {
 
   return (
     <div>
-      <h3 className="text-center text-dark mb-5 text-uppercase">
+      <h3 className="dashboard-sectionTitle text-center text-dark mb-5 text-uppercase">
         add new <span className="text-danger">product</span>
       </h3>
 
       <Form
-        className="d-flex flex-column w-50 mx-auto"
+        className="d-flex flex-column newProducts-form mx-auto"
         onSubmit={handleSubmit(onSubmit)}
       >
         <input
@@ -57,33 +58,6 @@ const AddNewProduct = () => {
           className="mb-3 py-2 px-3"
           placeholder="Model No."
           {...register("productModel")}
-        />
-        <input
-          style={{ outline: "none" }}
-          className="mb-3 py-2 px-3"
-          placeholder="Range"
-          {...register("productRange")}
-        />
-
-        <input
-          style={{ outline: "none" }}
-          className="mb-3 py-2 px-3"
-          placeholder="Control Type"
-          {...register("productControlType")}
-        />
-
-        <input
-          style={{ outline: "none" }}
-          className="mb-3 py-2 px-3"
-          placeholder="Camera Resolution"
-          {...register("productResolution")}
-        />
-
-        <input
-          style={{ outline: "none" }}
-          className="mb-3 py-2 px-3"
-          placeholder="Battery Backup"
-          {...register("productBatteries")}
         />
 
         <textarea

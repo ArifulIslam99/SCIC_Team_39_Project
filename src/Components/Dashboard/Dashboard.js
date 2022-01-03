@@ -21,8 +21,8 @@ const Dashboard = () => {
       <hr className="new mb-4" />
       <Container className="mt-2">
         <div className="d-flex">
-          <div className="side-menu d-flex align-items-center px-3 mb-5">
-            <Nav className="d-grid me-auto">
+          <div className="side-menu d-flex justify-content-center align-items-center px-3 mb-5">
+            <Nav className="d-grid">
               <NavLink
                 activeClassName="dashboard-navText-active"
                 className="dashboard-navText mb-5 text-decoration-none text-uppercase"
@@ -75,7 +75,7 @@ const Dashboard = () => {
                 <div className="icons">
                   <i class="fas fa-gem"></i>
                 </div>{" "}
-                <span className="d-navText">Manage All Products</span>
+                <span className="d-navText pe-3">Manage All Products</span>
               </NavLink>
 
               <NavLink
@@ -103,7 +103,7 @@ const Dashboard = () => {
             {/* 1st div  */}
           </div>
 
-          <div className="px-5 w-100">
+          <div className="dashboard-section">
             <Switch>
               <Route exact path={path}>
                 <YourOrders></YourOrders>

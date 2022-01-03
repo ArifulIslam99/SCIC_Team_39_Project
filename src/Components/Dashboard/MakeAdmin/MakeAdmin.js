@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import Swal from "sweetalert2";
-
+import "./MakeAdmin.css";
 const MakeAdmin = () => {
   const [email, setEmail] = useState("");
 
@@ -11,7 +11,7 @@ const MakeAdmin = () => {
 
   const handleAdminSubmit = (e) => {
     const user = { email };
-    fetch("https://secret-garden-17818.herokuapp.com/users/admin", {
+    fetch("http://secret-garden-17818.herokuapp.com//users/admin", {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -37,13 +37,13 @@ const MakeAdmin = () => {
 
   return (
     <div style={{ height: "600px" }}>
-      <h3 className="text-center text-uppercase">
+      <h3 className="dashboard-sectionTitle text-center text-uppercase">
         Make <span className="text-danger">admin</span>
       </h3>
       <Container className="d-flex justify-content-center">
         <form
           onSubmit={handleAdminSubmit}
-          className="mt-5 w-50 d-flex justify-content-center"
+          className="mt-5 d-flex justify-content-center"
         >
           <div className="input-group mb-3">
             <input

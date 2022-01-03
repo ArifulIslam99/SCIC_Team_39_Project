@@ -19,10 +19,15 @@ hr.new {
   background-color: #c7ad8b;
   color: white;
   font-weight: bold;
-  width: 280px;
+  width: 290px;
   height: 500px;
   position: sticky;
   top: 5%;
+}
+
+.dashboard-section {
+  width: 100%;
+  padding: 0px 60px 0px 60px;
 }
 
 .dashboard-navText {
@@ -50,5 +55,8 @@ hr.new {
     font-size: 20px;
     height: 20px;
     width: 20px;
+  }
+  .dashboard-section {
+    padding: 0px 0px 0px 20px;
   }
 }
