@@ -70,7 +70,7 @@ const ManageAllOrders = () => {
         <Table bordered hover>
           <thead className="text-uppercase">
             <tr>
-              <th className="text-center p-3">Drone Name</th>
+              <th className="text-center p-3">Jewelery Name</th>
               <th className="text-center p-3">Price</th>
               <th className="text-center p-3">Ordered By</th>
               <th className="text-center p-3">Status</th>
