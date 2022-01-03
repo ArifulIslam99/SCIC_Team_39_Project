@@ -8,6 +8,7 @@ import Footer from './Components/Shared/Footer/Footer';
 import Navigation from './Components/Shared/Navigation/Navigation';
 import AuthProvider from './Context/AuthProvider';
 
+
 function App() {
   return (
     <div className="App">
@@ -29,9 +30,7 @@ function App() {
             </Route>
           <Route path="/about">
               <About></About>
-            </Route>
-
-          
+            </Route>          
           </Switch>
           <Footer></Footer>
       </BrowserRouter>

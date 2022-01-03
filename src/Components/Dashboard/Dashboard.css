@@ -1,0 +1,54 @@
+.dashboard-text {
+  font-size: 30px;
+  color: #c7ad8b;
+  text-align: center;
+}
+.icons {
+  height: 15px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+hr.new {
+  border: 1px solid #c7ad8b;
+}
+
+.side-menu {
+  background-color: #c7ad8b;
+  color: white;
+  font-weight: bold;
+  width: 280px;
+  height: 500px;
+  position: sticky;
+  top: 5%;
+}
+
+.dashboard-navText {
+  color: #ffffff;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+.dashboard-navText:hover {
+  color: #cd4649;
+}
+.dashboard-navText-active {
+  color: #cd4649;
+}
+/* //////////////////// Media Queries ///////////////////// */
+
+@media all and (max-width: 688px) {
+  .d-navText {
+    display: none;
+  }
+  .side-menu {
+    width: 64px;
+  }
+  .icons {
+    font-size: 20px;
+    height: 20px;
+    width: 20px;
+  }
+}
