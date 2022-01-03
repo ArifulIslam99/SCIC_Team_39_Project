@@ -11,7 +11,7 @@ const AddNewProduct = () => {
   const onSubmit = (data) => {
     console.log(data);
     axios
-      .post("https://secret-garden-17818.herokuapp.com/products", data)
+      .post("http://secret-garden-17818.herokuapp.com//products", data)
       .then((res) => {
         if (res.data.insertedId) {
           reset();

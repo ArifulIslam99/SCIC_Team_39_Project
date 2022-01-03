@@ -8,7 +8,7 @@ const YourOrders = () => {
   const { user } = useAuth();
   useEffect(() => {
     fetch(
-      `https://secret-garden-17818.herokuapp.com/myorders?email=${user.email}`
+      `http://secret-garden-17818.herokuapp.com//myorders?email=${user.email}`
     )
       .then((res) => res.json())
       .then((data) => setOrders(data));
@@ -21,7 +21,7 @@ const YourOrders = () => {
       "Are you sure, you want to delete this order?"
     );
     if (proceed) {
-      fetch(`https://secret-garden-17818.herokuapp.com/myorders/${id}`, {
+      fetch(`http://secret-garden-17818.herokuapp.com//myorders/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

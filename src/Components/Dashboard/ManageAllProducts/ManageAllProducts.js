@@ -7,7 +7,7 @@ const ManageAllProducts = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("https://secret-garden-17818.herokuapp.com/products")
+    fetch("http://secret-garden-17818.herokuapp.com//products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
@@ -19,7 +19,7 @@ const ManageAllProducts = () => {
       "Are you sure, you want to delete this Product?"
     );
     if (proceed) {
-      fetch(`https://secret-garden-17818.herokuapp.com/products/${id}`, {
+      fetch(`http://secret-garden-17818.herokuapp.com//products/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
@@ -59,9 +59,15 @@ const ManageAllProducts = () => {
           <tbody>
             {products.map((product) => (
               <tr key={product._id} product={product}>
-                <td className="table-text text-center">{product.productName}</td>
-                <td className="text-center product-model">{product.productModel}</td>
-                <td className="table-text text-center">{product.productPrice}</td>
+                <td className="table-text text-center">
+                  {product.productName}
+                </td>
+                <td className="text-center product-model">
+                  {product.productModel}
+                </td>
+                <td className="table-text text-center">
+                  {product.productPrice}
+                </td>
                 <td className="table-text text-center">
                   <div className="text-center">
                     <Button
@@ -69,7 +75,7 @@ const ManageAllProducts = () => {
                       variant="danger w-75"
                       size="sm"
                     >
-                      Delete
+                      <span className="table-text">Delete</span>
                     </Button>
                   </div>
                 </td>

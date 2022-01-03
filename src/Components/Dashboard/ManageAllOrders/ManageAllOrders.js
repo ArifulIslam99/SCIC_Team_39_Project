@@ -8,7 +8,7 @@ const ManageAllOrders = () => {
   const [reload, setReload] = useState(false);
 
   useEffect(() => {
-    fetch("https://secret-garden-17818.herokuapp.com/allorders")
+    fetch("http://secret-garden-17818.herokuapp.com//allorders")
       .then((res) => res.json())
       .then((data) => setAllOrders(data));
   }, [reload]);
@@ -20,7 +20,7 @@ const ManageAllOrders = () => {
     );
     if (proceed) {
       setStatus(status);
-      fetch(`https://secret-garden-17818.herokuapp.com/updateStatus/${id}`, {
+      fetch(`http://secret-garden-17818.herokuapp.com//updateStatus/${id}`, {
         method: "PUT",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ status }),
@@ -42,7 +42,7 @@ const ManageAllOrders = () => {
       "Are you sure, you want to delete this order?"
     );
     if (proceed) {
-      fetch(`https://secret-garden-17818.herokuapp.com/allorders/${id}`, {
+      fetch(`http://secret-garden-17818.herokuapp.com//allorders/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
@@ -81,39 +81,43 @@ const ManageAllOrders = () => {
           <tbody>
             {allorders.map((orders) => (
               <tr key={orders._id} orders={orders}>
-                <td className="text-center">
+                <td className="table-text text-center">
                   {orders.singleProductName}
                   <br />
-                  <span className="hidden-price">
+                  <span className="table-text hidden-price">
                     {orders.singleProductPrice}
                   </span>{" "}
                   <br />
-                  <span className="hidden-status">
+                  <span className="table-text hidden-status">
                     {orders.bookedproductStatus}
                   </span>
                 </td>
-                <td className="text-center price">
+                <td className="table-text text-center price">
                   {orders.singleProductPrice}
                 </td>
-                <td className="text-center text-danger">{orders.userName}</td>
-                <td className="text-center status">
+                <td className="table-text text-center text-danger">
+                  {orders.userName}
+                </td>
+                <td className="table-text text-center status">
                   {orders.bookedproductStatus}
                 </td>
-                <td className="text-center">
-                  <div className="d-flex">
+                <td className="table-text text-center">
+                  <div className="cancel">
                     <Button
+                      className="approve-btn"
                       onClick={() => handleUpdate(orders._id)}
                       variant="outline-success w-100 me-2"
                       size="sm"
                     >
-                      Approve
+                      <span className="table-text">Approve</span>
                     </Button>
                     <Button
+                      className="table-text"
                       onClick={() => deleteHandler(orders._id)}
                       variant="danger w-100"
                       size="sm"
                     >
-                      Cancel
+                      <span className="table-text">Cancel</span>
                     </Button>
                   </div>
                 </td>

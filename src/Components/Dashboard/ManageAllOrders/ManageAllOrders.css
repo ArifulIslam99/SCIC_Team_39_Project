@@ -4,6 +4,9 @@
 .hidden-status {
   display: none;
 }
+.cancel {
+  display: flex;
+}
 @media all and (max-width: 688px) {
   .table-text {
     font-size: 10px;
@@ -25,5 +28,11 @@
   }
   .dashboard-orderTitle {
     font-size: 15px;
+  }
+  .cancel {
+    flex-direction: column;
+  }
+  .approve-btn {
+    margin-bottom: 5px;
   }
 }
