@@ -14,12 +14,7 @@
   cursor: pointer;
 }
 
-.footer-input {
-  padding: 8px;
-  border: none;
-  outline: none;
-  background-color: gray;
-}
+
 .footer-container {
   background-color: #3a3434;
   padding: 50px;
