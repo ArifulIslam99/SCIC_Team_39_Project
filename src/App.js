@@ -8,6 +8,7 @@ import About from './Components/Home/About/About';
 import Home from './Components/Home/Home/Home';
 import Footer from './Components/Shared/Footer/Footer';
 import Navigation from './Components/Shared/Navigation/Navigation';
+import Shop from './Components/Shop/Shop';
 import AuthProvider from './Context/AuthProvider';
 
 
@@ -29,6 +30,9 @@ function App() {
             </Route>
             <Route path="/home">
               <Home></Home>
+            </Route>
+            <Route path="/shop">
+              <Shop></Shop>
             </Route>
           <Route path="/about">
               <About></About>
