@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useHistory, useLocation } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 import loginbg from '../../../images/login_bg.jpg'
 const SignUp = () => {
 
 
     const [loginData, setLoginData] = useState({});
+    const history = useHistory();
+    const location = useLocation()
+    const {googleSignIn,  userRegistration} = useAuth()
 
 const loginBackground = {
     background : `url(${loginbg})`,
@@ -23,11 +27,19 @@ const loginBackground = {
      }
 
      const handleGoogleSignIn = () =>{
-
+        googleSignIn(history,location)
      }
 
-     const handleRegisterSubmit = () =>{
+     const handleRegisterSubmit = event =>{
+        if(loginData.password !== loginData.password2)
+        {
+            alert('Password Did Not Match')
+        } 
+        else{
+            userRegistration(loginData.email, loginData.password, loginData.name,history)
+        }
 
+        event.preventDefault(); 
      }
     return (
         <>

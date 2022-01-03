@@ -6,11 +6,13 @@ import About from './Components/Home/About/About';
 import Home from './Components/Home/Home/Home';
 import Footer from './Components/Shared/Footer/Footer';
 import Navigation from './Components/Shared/Navigation/Navigation';
+import AuthProvider from './Context/AuthProvider';
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+       <AuthProvider>
+       <BrowserRouter>
       <Navigation></Navigation>
           <Switch>
               <Route path='/login'> 
@@ -33,6 +35,7 @@ function App() {
           </Switch>
           <Footer></Footer>
       </BrowserRouter>
+       </AuthProvider>
     </div>
   );
 }

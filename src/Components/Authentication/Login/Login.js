@@ -1,18 +1,25 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useHistory, useLocation } from 'react-router-dom';
 import './Login.css'
 import loginbg from '../../../images/login_bg.jpg'
+import useAuth from '../../../hooks/useAuth';
+
+
+
 const Login = () => {
 
-
     const [loginData, setLoginData] = useState({});
+    const {googleSignIn, userLogin} = useAuth()
+    const history = useHistory()
+    const location = useLocation()
+    const {error} = useAuth()
 
-const loginBackground = {
+     const loginBackground = {
     background : `url(${loginbg})`,
     backgroundSize: 'cover'
    
-} 
+     } 
 
     const handleOnBlur = event =>{
      const field = event.target.name;
@@ -24,11 +31,12 @@ const loginBackground = {
      }
 
      const handleGoogleSignIn = () =>{
-
+        googleSignIn(history,location)
      }
 
-     const handleLoginSubmit = () =>{
-
+     const handleLoginSubmit = event =>{
+        userLogin(loginData.email, loginData.password, history, location)
+        event.preventDefault();
      }
     return (
         <>
@@ -72,7 +80,7 @@ const loginBackground = {
 
                 <br />
 
-                {/* <h6 style={{color:"red"}}>{error} </h6> */}
+                <h6 style={{color:"red"}}>{error} </h6>
                 <p className="alternate-msg">New User ? <Link style={{textDecoration:'none', color:'orange'}} to="/register">Please Signup first</Link> </p> 
                 <p>----- OR -----</p>
                 <Button onClick={handleGoogleSignIn} variant="danger"><i className="fab fa-google"></i>oogle Sign In</Button>
