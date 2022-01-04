@@ -17,19 +17,19 @@ const Exclusive = () => {
           <div className="product-top">
             <img src={img1} alt="" />
             <div className="overlay">
-              <button type="button" className="btn btn-secondary" title="Quick Shop"><i class="far fa-eye"></i></button>
+              <button type="button" className="btn btn-secondary" title="Quick Shop"><i className="far fa-eye"></i></button>
 
-              <button type="button" className="btn btn-secondary" title="Add Wishlist"><i class="far fa-heart"></i></button>
+              <button type="button" className="btn btn-secondary" title="Add Wishlist"><i className="far fa-heart"></i></button>
 
-              <button type="button" className="btn btn-secondary" title="cart"><i class="fas fa-shopping-cart"></i></button>
+              <button type="button" className="btn btn-secondary" title="cart"><i className="fas fa-shopping-cart"></i></button>
             </div>
 
 {/* <div className="product-bottom text-center">
-<i class="fas fa-star" ></i>
-<i class="fas fa-star" ></i>
-<i class="fas fa-star" ></i>
-<i class="fas fa-star-half-alt" ></i>
-<i class="far fa-star"></i>
+<i className"fas fa-star" ></i>
+<i className"fas fa-star" ></i>
+<i className"fas fa-star" ></i>
+<i className"fas fa-star-half-alt" ></i>
+<i className"far fa-star"></i>
 </div> */}
 
 {/* <h5>write something about product</h5> */}
@@ -43,19 +43,19 @@ const Exclusive = () => {
           <div className="product-top">
             <img src={img2} alt="" />
             <div className="overlay">
-              <button type="button" className="btn btn-secondary" title="Quick Shop"><i class="far fa-eye"></i></button>
+              <button type="button" className="btn btn-secondary" title="Quick Shop"><i className="far fa-eye"></i></button>
 
-              <button type="button" className="btn btn-secondary" title="Add Wishlist"><i class="far fa-heart"></i></button>
+              <button type="button" className="btn btn-secondary" title="Add Wishlist"><i className="far fa-heart"></i></button>
 
-              <button type="button" className="btn btn-secondary" title="cart"><i class="fas fa-shopping-cart"></i></button>
+              <button type="button" className="btn btn-secondary" title="cart"><i className="fas fa-shopping-cart"></i></button>
             </div>
 
 {/* <div className="product-bottom text-center">
-<i class="fas fa-star" ></i>
-<i class="fas fa-star" ></i>
-<i class="fas fa-star" ></i>
-<i class="fas fa-star-half-alt" ></i>
-<i class="far fa-star"></i>
+<i className"fas fa-star" ></i>
+<i className"fas fa-star" ></i>
+<i className"fas fa-star" ></i>
+<i className"fas fa-star-half-alt" ></i>
+<i className"far fa-star"></i>
 </div> */}
           </div>
         </div>
@@ -66,20 +66,14 @@ const Exclusive = () => {
           <div className="product-top">
             <img src={img3} alt="" />
             <div className="overlay">
-              <button type="button" className="btn btn-secondary" title="Quick Shop"><i class="far fa-eye"></i></button>
+              <button type="button" className="btn btn-secondary" title="Quick Shop"><i className="far fa-eye"></i></button>
 
-              <button type="button" className="btn btn-secondary" title="Add Wishlist"><i class="far fa-heart"></i></button>
+              <button type="button" className="btn btn-secondary" title="Add Wishlist"><i className="far fa-heart"></i></button>
 
-              <button type="button" className="btn btn-secondary" title="cart"><i class="fas fa-shopping-cart"></i></button>
+              <button type="button" className="btn btn-secondary" title="cart"><i className="fas fa-shopping-cart"></i></button>
             </div>
 
-{/* <div className="product-bottom text-center">
-<i class="fas fa-star" ></i>
-<i class="fas fa-star" ></i>
-<i class="fas fa-star" ></i>
-<i class="fas fa-star-half-alt" ></i>
-<i class="far fa-star"></i>
-</div> */}
+
           </div>
         </div>
 
@@ -89,19 +83,19 @@ const Exclusive = () => {
           <div className="product-top">
             <img src={img4} alt="" />
             <div className="overlay">
-              <button type="button" className="btn btn-secondary" title="Quick Shop"><i class="far fa-eye"></i></button>
+              <button type="button" className="btn btn-secondary" title="Quick Shop"><i className="far fa-eye"></i></button>
 
-              <button type="button" className="btn btn-secondary" title="Add Wishlist"><i class="far fa-heart"></i></button>
+              <button type="button" className="btn btn-secondary" title="Add Wishlist"><i className="far fa-heart"></i></button>
 
-              <button type="button" className="btn btn-secondary" title="cart"><i class="fas fa-shopping-cart"></i></button>
+              <button type="button" className="btn btn-secondary" title="cart"><i className="fas fa-shopping-cart"></i></button>
             </div>
 
 {/* <div className="product-bottom text-center">
-<i class="fas fa-star" ></i>
-<i class="fas fa-star" ></i>
-<i class="fas fa-star" ></i>
-<i class="fas fa-star-half-alt" ></i>
-<i class="far fa-star"></i>
+<i className"fas fa-star" ></i>
+<i className"fas fa-star" ></i>
+<i className"fas fa-star" ></i>
+<i className"fas fa-star-half-alt" ></i>
+<i className"far fa-star"></i>
 </div> */}
           </div>
         </div>

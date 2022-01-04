@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 import "./AddReview.css";
 const AddReview = () => {
   const { register, handleSubmit, reset } = useForm();
-
+   
   const onSubmit = (data) => {
     console.log(data);
     axios

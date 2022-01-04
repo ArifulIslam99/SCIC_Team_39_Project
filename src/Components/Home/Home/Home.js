@@ -25,36 +25,13 @@ const Home = () => {
 
    
 
-{/*--------------- About Start------------ */}
-     <div  style={{width:'90%', marginTop:'200px'}} className="row mx-auto d-flex- justify-content-center align-items-centercontainer ">
 
-<div className="col-md-6">
-<h1 className="primary fw-bold">To know about US..</h1>
-<hr />
-  <h3>
-  We left no stone unturned in our quest to find the very best web design examples of jewellery e-commerce sites. Here are our top 31 finds...
-  </h3>
-
-  <p>Our luxury designer jewelry house based in Rhode Island. We create seasonal collections of heirloom quality pieces that are crafted in small batches.
-
-With the product having so much focus on aesthetic beauty and monetary value, the design of the site mustn't outshine the stock. A good site will be beautiful while not getting in the way of the items it is designed to be selling.
-
-In this article we'll reveal our list of our top 31 jewellery e-commerce sites, including two of our own! The title and screenshot of each site is hyperlinked, so you can go and take a look at them for yourself.</p>
-</div>
-<div className="col-md-6 mb-5 pm-5">
-  <img className="" src={aboutimg2} alt="" />
-
-</div>
-
-</div>
-
-{/* -------------About End-------------- */}
 
 
 {/* -------Shop products start------- */}
 
 <div className='container'>
-                <h2 className='text-info fw-bold py-3 my-4' id='offers' ><span className='text-warning fw-bold'> All </span>Products</h2>
+                <h2 className='text-info fw-bold py-3 mb-2 mt-5' id='offers' ><span className='text-warning fw-bold'> Featured </span>Collection</h2>
 
                 <Row xs={1} md={3} className="g-4">
                     {
@@ -68,6 +45,32 @@ In this article we'll reveal our list of our top 31 jewellery e-commerce sites, 
             {/* ------shop products end------ */}
 
             <br />
+
+
+            {/*--------------- About Start------------ */}
+     <div  style={{width:'90%', marginTop:'200px'}} className="row mx-auto d-flex- justify-content-center align-items-centercontainer ">
+
+<div className="col-md-6">
+<h1 className="primary fw-bold">To know about US..</h1>
+<hr />
+  <h3>
+  We left no stone unturned in our quest to find the very best web design examples of jewellery e-commerce sites. Here are our top 31 finds...
+  </h3>
+
+  <p style={{textAlign:'justify'}}>Our luxury designer jewelry house based in Rhode Island. We create seasonal collections of heirloom quality pieces that are crafted in small batches.
+
+With the product having so much focus on aesthetic beauty and monetary value, the design of the site mustn't outshine the stock. A good site will be beautiful while not getting in the way of the items it is designed to be selling.
+
+In this article we'll reveal our list of our top 31 jewellery e-commerce sites, including two of our own! The title and screenshot of each site is hyperlinked, so you can go and take a look at them for yourself.</p>
+</div>
+<div className="col-md-6 mb-5 pm-5">
+  <img className="" src={aboutimg2} alt="" />
+
+</div>
+
+</div>
+
+{/* -------------About End-------------- */}
 
     </div>
   );

@@ -5,6 +5,7 @@ import { useHistory } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
+import './Purchase.css'
 
 const Purchase = () => {
 
@@ -36,22 +37,22 @@ const Purchase = () => {
 
     }
     return (
-        <div>
+        <div className='Add-Booking'>
               <h2 className='fw-bold text-warning'>Confirm Your Booking</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
                 {user.displayName &&
                     <input readOnly={true}{...register("name", { required: true, maxLength: 50 })} value={user.displayName} />
                 }
                 <br />
-                <h3 className="text-start">Email</h3>
                 <input {...register("email", { required: true, maxLength: 50 })} placeholder="Email" value={user.email} />
-                
-
+                 <br /> 
+                {bookings.productPrice && <input readOnly={true} {...register("price")} defaultValue={bookings.productPrice} />}
                 <br />
-                <h3 className="text-start">Shipping Status</h3>
-                <input className="pending" {...register("status", { required: true, maxLength: 51 })} placeholder="Status" value="Pending" />
 
-                
+                {bookings.productImg && <input readOnly={true} {...register("img")} defaultValue={bookings.productImg} />}
+                <br />
+      
+                <input className="pending" {...register("status", { required: true, maxLength: 51 })} placeholder="Status" value="Pending" />
                 <br />
                 
                 {bookings.productName &&
@@ -62,7 +63,8 @@ const Purchase = () => {
                 <br />
                 <input type='number' {...register("phoneNumber", { required: true, maxLength: 13 })} placeholder="Phone Number" />
                 <br />
-                <input className='btn btn-warning' type="submit" />
+                <input className='btn btn-warning w-25' type="submit" />
+                <br />
             </form>
         </div>
     );

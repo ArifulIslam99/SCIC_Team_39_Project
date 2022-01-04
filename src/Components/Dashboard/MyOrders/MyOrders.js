@@ -7,10 +7,10 @@ import "./MyOrders.css";
 const MyOrders = () => {
   const [orders, setOrders] = useState([]);
   const { user } = useAuth();
-  console.log(user.email)
+
   useEffect(() => {
     fetch(
-      `http://secret-garden-17818.herokuapp.com/myorders?email=${user.email}`
+      `https://secret-garden-17818.herokuapp.com/myorders/${user.email}`
     )
       .then((res) => res.json())
       .then((data) => setOrders(data));
@@ -18,7 +18,7 @@ const MyOrders = () => {
   }, [user.email]);
 
   const deleteHandler = (id) => {
-    console.log(id);
+    console.log(orders);
     const proceed = window.confirm(
       "Are you sure, you want to delete this order?"
     );
@@ -58,19 +58,19 @@ const MyOrders = () => {
                 width="250"
                 height="175"
                 variant="top"
-                src={order.singleProductImg}
+                src={order.img}
               />
               <Card.Body className="text-center">
                 <Card.Title>
                   {" "}
                   <span className="text-danger">
-                    {order.singleProductName}
+                    {order.productName}
                   </span>{" "}
                 </Card.Title>
                 <span className="fs-5">{order.singleProductPrice}</span>
                 <Card.Text>
                   <span className="text-danger">BOOKED BY</span> <br />{" "}
-                  <i className="fas fa-user"></i> {order.userName}
+                  <i className="fas fa-user"></i> {order.name}
                 </Card.Text>
                 <Button
                   onClick={() => deleteHandler(order._id)}
@@ -85,7 +85,7 @@ const MyOrders = () => {
                 className="text-center"
               >
                 <small className="text-muted">
-                  {order.bookedproductStatus}
+                  {order.status}
                 </small>
               </Card.Footer>
             </Card>
