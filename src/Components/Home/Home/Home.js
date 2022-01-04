@@ -4,6 +4,7 @@ import Exclusive from '../Exclusive/Exclusive';
 import React, { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
 import DisplayProducts from '../../Shop/DisplayProducts/DisplayProducts';
+import Reviews from '../../Reviews/Reviews';
 
 
 const Home = () => {
@@ -14,6 +15,14 @@ const Home = () => {
             .then(res => res.json())
             .then(data => setProducts(data.slice(0, 6)));
     }, [])
+
+    const [userReviews, setUserReviews] = useState([]);
+ 
+    useEffect(() => {
+      fetch("https://secret-garden-17818.herokuapp.com/reviews")
+        .then((res) => res.json())
+        .then((data) => setUserReviews(data));
+    }, []);
 
 
   return (
@@ -71,7 +80,17 @@ In this article we'll reveal our list of our top 31 jewellery e-commerce sites, 
 </div>
 
 {/* -------------About End-------------- */}
+     <div>
+     <h2 className='text-info fw-bold py-3 mb-2 mt-5' id='offers' ><span className='text-warning fw-bold'> Users </span>Feedback</h2>
 
+<Row xs={1} md={3} className="w-75 mx-auto">
+    {
+        userReviews.map(review => <Reviews review={review}></Reviews>)
+    }
+
+
+</Row>
+     </div>
     </div>
   );
 };

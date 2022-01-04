@@ -41,9 +41,9 @@ function App() {
               <Dashboard></Dashboard>
             </PrivateRoute>          
                  
-          <Route path="/purchase/:purchaseId">
+          <PrivateRoute path="/purchase/:purchaseId">
               <Purchase></Purchase>
-            </Route>          
+            </PrivateRoute>          
           </Switch>
           <Footer></Footer>
       </BrowserRouter>

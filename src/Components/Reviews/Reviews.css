@@ -1,0 +1,12 @@
+.res-review-bottom {
+  margin-bottom: 90px;
+}
+@media all and (max-width: 688px) {
+  .res-client-top {
+    margin-top: 90px;
+  }
+
+  .res-review-bottom {
+    margin-bottom: 20px;
+  }
+}
