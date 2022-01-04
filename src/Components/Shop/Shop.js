@@ -5,7 +5,7 @@ import DisplayProducts from './DisplayProducts/DisplayProducts';
 const Shop = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('/products.json')
+        fetch('https://secret-garden-17818.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [])
