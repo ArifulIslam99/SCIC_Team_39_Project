@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route, useRouteMatch } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { Container, Nav } from "react-bootstrap";
-import YourOrders from "./YourOrders/YourOrders";
+
 import AddReview from "./AddReview/AddReview";
 import AddNewProduct from "./AddNewProduct/AddNewProduct";
 import ManageAllOrders from "./ManageAllOrders/ManageAllOrders";
@@ -10,6 +10,7 @@ import MakeAdmin from "./MakeAdmin/MakeAdmin";
 import Payment from "./Payment/Payment";
 import ManageAllProducts from "./ManageAllProducts/ManageAllProducts";
 import "./Dashboard.css";
+import MyOrders from "./MyOrders/MyOrders";
 
 const Dashboard = () => {
   let { path, url } = useRouteMatch();
@@ -26,12 +27,12 @@ const Dashboard = () => {
               <NavLink
                 activeClassName="dashboard-navText-active"
                 className="dashboard-navText mb-5 text-decoration-none text-uppercase"
-                to={`${url}/yourorders`}
+                to={`${url}/myorders`}
               >
                 <div className="icons">
                   <i class="fas fa-shopping-cart"></i>
                 </div>{" "}
-                <span className="d-navText">Your Orders</span>
+                <span className="d-navText">My Orders</span>
               </NavLink>
 
               <NavLink
@@ -106,11 +107,11 @@ const Dashboard = () => {
           <div className="dashboard-section">
             <Switch>
               <Route exact path={path}>
-                <YourOrders></YourOrders>
+                <MyOrders></MyOrders>
               </Route>
 
-              <Route exact path={`${path}/yourorders`}>
-                <YourOrders></YourOrders>
+              <Route exact path={`${path}/myorders`}>
+                <MyOrders></MyOrders>
               </Route>
 
               <Route path={`${path}/addreview`}>

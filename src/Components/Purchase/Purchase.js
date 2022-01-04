@@ -11,7 +11,7 @@ const Purchase = () => {
     const { purchaseId } = useParams();
     const location = useLocation();
     const history = useHistory();
-    const redirect_url = location.state?.from || '/dashboard/yourorders';
+    const redirect_url = location.state?.from || '/dashboard/myorders';
     const { user } = useAuth();
     console.log(user);
     const [bookings, setBookings] = useState({});
@@ -45,13 +45,15 @@ const Purchase = () => {
                 <br />
                 <h3 className="text-start">Email</h3>
                 <input {...register("email", { required: true, maxLength: 50 })} placeholder="Email" value={user.email} />
+                
 
                 <br />
                 <h3 className="text-start">Shipping Status</h3>
                 <input className="pending" {...register("status", { required: true, maxLength: 51 })} placeholder="Status" value="Pending" />
 
-                {bookings.price && <input readOnly={true} {...register("price")} defaultValue={bookings.price} />}
+                
                 <br />
+                
                 {bookings.productName &&
                     <input readOnly={true} {...register("productName", { required: true })} value={bookings.productName} />}
 

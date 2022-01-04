@@ -8,7 +8,7 @@ const ManageAllOrders = () => {
   const [reload, setReload] = useState(false);
 
   useEffect(() => {
-    fetch("http://secret-garden-17818.herokuapp.com//allorders")
+    fetch("http://secret-garden-17818.herokuapp.com/allorders")
       .then((res) => res.json())
       .then((data) => setAllOrders(data));
   }, [reload]);
@@ -20,7 +20,7 @@ const ManageAllOrders = () => {
     );
     if (proceed) {
       setStatus(status);
-      fetch(`http://secret-garden-17818.herokuapp.com//updateStatus/${id}`, {
+      fetch(`http://secret-garden-17818.herokuapp.com/updateStatus/${id}`, {
         method: "PUT",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ status }),
@@ -42,7 +42,7 @@ const ManageAllOrders = () => {
       "Are you sure, you want to delete this order?"
     );
     if (proceed) {
-      fetch(`http://secret-garden-17818.herokuapp.com//allorders/${id}`, {
+      fetch(`http://secret-garden-17818.herokuapp.com/allorders/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
@@ -72,7 +72,7 @@ const ManageAllOrders = () => {
           <thead className="text-uppercase">
             <tr>
               <th className="table-text text-center p-3">Jewelery Name</th>
-              <th className="table-text price text-center p-3">$ Price</th>
+              <th className="table-text price text-center p-3">User Contact</th>
               <th className="table-text text-center p-3">Ordered By</th>
               <th className="table-text status text-center p-3">Status</th>
               <th className="table-text text-center p-3">Approve / Cancel</th>
@@ -82,7 +82,7 @@ const ManageAllOrders = () => {
             {allorders.map((orders) => (
               <tr key={orders._id} orders={orders}>
                 <td className="table-text text-center">
-                  {orders.singleProductName}
+                  {orders.productName}
                   <br />
                   <span className="table-text hidden-price">
                     {orders.singleProductPrice}
@@ -93,13 +93,13 @@ const ManageAllOrders = () => {
                   </span>
                 </td>
                 <td className="table-text text-center price">
-                  {orders.singleProductPrice}
+                  {orders.phoneNumber}
                 </td>
                 <td className="table-text text-center text-danger">
-                  {orders.userName}
+                  {orders.name}
                 </td>
                 <td className="table-text text-center status">
-                  {orders.bookedproductStatus}
+                  {orders.status}
                 </td>
                 <td className="table-text text-center">
                   <div className="cancel">

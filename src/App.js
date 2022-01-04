@@ -3,14 +3,14 @@ import './App.css';
 import Login from './Components/Authentication/Login/Login';
 import PrivateRoute from './Components/Authentication/PrivateRoute/PrivateRoute';
 import SignUp from './Components/Authentication/SignUp/SignUp';
-import Dashboard from './Components/Dashboard/Dashboard';
 import About from './Components/Home/About/About';
 import Home from './Components/Home/Home/Home';
 import Footer from './Components/Shared/Footer/Footer';
 import Navigation from './Components/Shared/Navigation/Navigation';
 import Shop from './Components/Shop/Shop';
 import AuthProvider from './Context/AuthProvider';
-
+import Purchase from './Components/Purchase/Purchase';
+import Dashboard from './Components/Dashboard/Dashboard';
 
 function App() {
   return (
@@ -37,9 +37,13 @@ function App() {
           <Route path="/about">
               <About></About>
             </Route>          
-          <PrivateRoute path="/dashboard">
-              <Dashboard/>
-            </PrivateRoute>          
+          <Route path="/dashboard">
+              <Dashboard></Dashboard>
+            </Route>          
+                 
+          <Route path="/purchase/:purchaseId">
+              <Purchase></Purchase>
+            </Route>          
           </Switch>
           <Footer></Footer>
       </BrowserRouter>

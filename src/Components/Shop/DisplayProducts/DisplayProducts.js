@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const DisplayProducts = (props) => {
-    const { productName, productPrice, productImg, productDescription } = props.product;
+    const { _id , productName, productPrice, productImg, productDescription } = props.product;
     return (
         <div>
            <div className="col">
@@ -15,7 +15,9 @@ const DisplayProducts = (props) => {
                         <h5 className="card-title"> {productDescription}</h5>
 
                         <div className="text-center my-4">
-                            <button className="btn btn-warning">Purchase Now</button>
+                          <Link to={`/purchase/${_id}`}>
+                          <button className="btn btn-warning">Purchase Now</button>
+                          </Link>
                           
                         </div>
                     </div>

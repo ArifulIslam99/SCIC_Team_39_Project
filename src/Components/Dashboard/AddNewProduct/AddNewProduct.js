@@ -11,7 +11,7 @@ const AddNewProduct = () => {
   const onSubmit = (data) => {
     console.log(data);
     axios
-      .post("http://secret-garden-17818.herokuapp.com//products", data)
+      .post("http://secret-garden-17818.herokuapp.com/products", data)
       .then((res) => {
         if (res.data.insertedId) {
           reset();
@@ -57,7 +57,7 @@ const AddNewProduct = () => {
           style={{ outline: "none" }}
           className="mb-3 py-2 px-3"
           placeholder="Model No."
-          {...register("productModel")}
+          {...register("productType")}
         />
 
         <textarea

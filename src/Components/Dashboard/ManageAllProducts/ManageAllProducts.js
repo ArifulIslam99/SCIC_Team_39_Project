@@ -7,7 +7,7 @@ const ManageAllProducts = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://secret-garden-17818.herokuapp.com//products")
+    fetch("http://secret-garden-17818.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
@@ -19,7 +19,7 @@ const ManageAllProducts = () => {
       "Are you sure, you want to delete this Product?"
     );
     if (proceed) {
-      fetch(`http://secret-garden-17818.herokuapp.com//products/${id}`, {
+      fetch(`http://secret-garden-17818.herokuapp.com/products/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
