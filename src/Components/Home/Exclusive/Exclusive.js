@@ -9,7 +9,7 @@ import './Exclusive.css'
 const Exclusive = () => {
   return (
     <div className="container  collection">
-      <h2>Exclusive Collection</h2>
+    
       <div className="row">
 
 

@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { Row } from 'react-bootstrap';
+import { Row, Spinner } from 'react-bootstrap';
 import DisplayProducts from './DisplayProducts/DisplayProducts';
 
 const Shop = () => {
-    const [products, setProducts] = useState([]);
+    const [products, setProducts] = useState(null);
     useEffect(() => {
         fetch('https://secret-garden-17818.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [])
+    if(products===null){return <Spinner animation="grow" />}
     return (
         <div>
             <div className='container'>

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { Spinner } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { useHistory } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
@@ -36,6 +37,7 @@ const Purchase = () => {
             })
 
     }
+    if(!bookings){return <Spinner animation="grow" />}
     return (
         <div className='Add-Booking'>
               <h2 className='fw-bold text-warning'>Confirm Your Booking</h2>
@@ -46,7 +48,7 @@ const Purchase = () => {
                 <br />
                 <input {...register("email", { required: true, maxLength: 50 })} placeholder="Email" value={user.email} />
                  <br /> 
-                {bookings.productPrice && <input readOnly={true} {...register("price")} defaultValue={bookings.productPrice} />}
+                 <input readOnly={true} {...register("price")} defaultValue={bookings.productPrice} />
                 <br />
 
                 {bookings.productImg && <input readOnly={true} {...register("img")} defaultValue={bookings.productImg} />}

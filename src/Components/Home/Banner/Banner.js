@@ -26,7 +26,7 @@ const Banner = () => {
                 <br />
              
               </div>
-              <Link to={``}>
+              <Link to={`/shop`}>
                 <button className="btn btn-light text-success fw-bold">Explore Now</button>
               </Link>
             </div>

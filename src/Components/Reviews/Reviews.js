@@ -9,7 +9,7 @@ const Reviews = ({review}) => {
   return (
     <Container>
          <Col>
-      <Card className='m-3 p-4' style={{height:'400px'}}>
+      <Card className='m-3 p-4' style={{height:'500px'}}>
         <Card.Img style={{width:'200px', height:'200px', borderRadius:'50%'}} variant="top" className='mx-auto' src={review.userImg} />
         <Card.Body>
           <Card.Title>{review.userName}</Card.Title>
