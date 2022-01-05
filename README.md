@@ -50,7 +50,7 @@
     </li>
     </br>
       <li>
-      Admin panel is secured in which user can't access the admin panel features
+      Admin panel is secured in which customers can't access the admin panel features.
       </li>
       
       
