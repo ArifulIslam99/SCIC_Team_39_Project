@@ -1,14 +1,15 @@
 # Jewelries E-Commerce-Application
 
 <li>
-      It’s a MERN stack e-commerce project.
+      It’s a MERN stack project including basic e-commerce features.
       <a
         target="_blank"
         rel="noopener noreferrer"
         href="https://jewellery-house.web.app/"
         >Check Here...</a
       >
-    </li>
+    </li>    
+      </br>
     <li>
       It's website based on Jewelery Shop which is a wide selection Of
       discounted Jewelry making supplies and wholesale beads. We are dedicated
@@ -25,6 +26,23 @@
       and Heroku.
     </li>
     <li>
-      This web application also has the dashboard feature which manages the
-      client’s product orders.
+      In this website customers can choose and order their favourite jeweleries according to the various categories such as rings, ear-rings, necklage and many more at a reasonable price.
     </li>
+    <li>
+      This web application also has the admin and customer's dashboard panel which manages the
+      client’s product orders.
+    </li>    
+      <li>
+      Customers can delete their orders before pending statement.
+    </li>
+    <li>
+      Customers can also add their reviews with ratings.
+    </li>
+    <li>
+      In admin dashboard panel admin can manage the entire products arrangement, admin can add and delete new products, delete and approve customer orders admin can also add another admin. 
+    </li>
+      <li>
+      Admin panel is secured in which user can't access the admin panel features
+      </li>
+      
+      
