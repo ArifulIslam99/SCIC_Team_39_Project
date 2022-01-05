@@ -12,7 +12,7 @@
     <li>
       It's website based on Jewelery Shop which is a wide selection Of
       discounted Jewelry making supplies and wholesale beads. We are dedicated
-      to provide high-quality jewelry making supplies to Our customers.
+      to provide high-quality jewelry making supplies to our customers.
     </li>
     <li>
       We have used the most famous frameworks and libraries to build this react
