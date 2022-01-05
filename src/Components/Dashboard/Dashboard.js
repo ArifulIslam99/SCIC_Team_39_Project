@@ -34,7 +34,7 @@ const Dashboard = () => {
       <hr className="new mb-4" />
       <Container className="mt-2">
         <div className="d-flex">
-          <div className="side-menu d-flex justify-content-center align-items-center py-5 px-3 mb-5">
+          <div className="side-menu d-flex justify-content-center align-items-center px-3 mb-5">
             <Nav className="d-grid">
 
 
@@ -43,7 +43,7 @@ const Dashboard = () => {
                  <div>
                    <NavLink
                 activeClassName="dashboard-navText-active"
-                className="dashboard-navText mb-5 text-decoration-none text-uppercase"
+                className="dashboard-navText mt-5 mb-5 text-decoration-none text-uppercase"
                 to={`${url}/myorders`}
               > 
                 <div className="icons">
@@ -113,7 +113,7 @@ const Dashboard = () => {
 
               <NavLink
                 activeClassName="dashboard-navText-active"
-                className="dashboard-navText text-decoration-none text-uppercase"
+                className="dashboard-navText mb-5 text-decoration-none text-uppercase"
                 to={`${url}/makeadmin`}
               >
                 <div className="icons">
