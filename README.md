@@ -34,7 +34,7 @@
     </br>
     <li>
       This web application also has the admin and customer's dashboard panel which manages the
-      client’s product orders.
+      product arrangement.
     </li> 
     </br>
       <li>
