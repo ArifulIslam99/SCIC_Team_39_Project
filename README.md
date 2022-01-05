@@ -38,7 +38,7 @@
     </li> 
     </br>
       <li>
-      Customers can delete their orders before pending statement.
+      Customers can delete their orders before approved statement.
     </li>
     </br>
     <li>
