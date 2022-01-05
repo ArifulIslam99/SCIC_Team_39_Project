@@ -34,7 +34,7 @@ const Dashboard = () => {
       <hr className="new mb-4" />
       <Container className="mt-2">
         <div className="d-flex">
-          <div className="side-menu d-flex justify-content-center align-items-center px-3 mb-5">
+          <div className="side-menu d-flex justify-content-center align-items-center py-5 px-3 mb-5">
             <Nav className="d-grid">
 
 
