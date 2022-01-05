@@ -11,7 +11,7 @@
     </li>    
       </br>
     <li>
-      It's website based on Jewelery Shop which is a wide selection Of
+      It's a website based on Jewelery Shop which is a wide selection of
       discounted Jewelry making supplies and wholesale beads. We are dedicated
       to provide high-quality jewelry making supplies to our customers.
     </li>
